@@ -1,0 +1,29 @@
+public class test
+{
+	public static void main(String[] args)
+	 
+		{
+			System.out.println("Hello");
+		}
+	// Superclass
+	class B 
+	{
+	public void test(){
+		  System.out.println("C");
+		  }
+		  }
+		    
+		  class A extends B{
+		  public void test(){
+		  System.out.println("B");
+		  }
+		  }
+		    
+		  class C extends B {
+		  public void test(){
+		  System.out.println("A");
+		  }
+		  }
+}
+
+// It is not possible to invoke test() method defined in C from a method in A.
